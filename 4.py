@@ -59,9 +59,8 @@ class Passport():
 
     def hcl_is_valid(self):
         pattern = r'^#[0-9a-f]{6}$'
-        if re.match(pattern, self.hcl):
-            return True
-        return False
+        is_valid = re.match(pattern, self.hcl)
+        return is_valid
 
     def ecl_is_valid(self):
         if self.ecl in ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth']:
@@ -70,9 +69,8 @@ class Passport():
 
     def pid_is_valid(self):
         pattern = r'^[0-9]{9}$'
-        if re.match(pattern, self.pid):
-            return True
-        return False
+        is_valid = re.match(pattern, self.pid)
+        return is_valid
 
 
 def read_all_passport_data(filepath):

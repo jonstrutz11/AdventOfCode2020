@@ -63,9 +63,7 @@ class Passport():
         return is_valid
 
     def ecl_is_valid(self):
-        if self.ecl in ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth']:
-            return True
-        return False
+        return self.ecl in ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth']
 
     def pid_is_valid(self):
         pattern = r'^[0-9]{9}$'

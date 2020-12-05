@@ -6,10 +6,10 @@ class BoardingPass():
 
     def __init__(self, seat_code):
         self.seat_code = seat_code
-        self.row, self.col = self._parse_seat_code(seat_code)
+        self.row, self.col = self._parse_seat_code()
         self.id = self._calculate_id()
 
-    def _parse_seat_code(self, seat_code):
+    def _parse_seat_code(self):
         """Convert binary space partitioning code to row and column number."""
         # Write in binary form
         row_bin = self.seat_code[:7].replace('F', '0').replace('B', '1')

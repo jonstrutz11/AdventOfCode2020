@@ -46,10 +46,7 @@ if __name__ == '__main__':
     boarding_passes = read_and_parse_boarding_pass_data(DATA_FILEPATH)
 
     # Part A
-    highest_id = -1
-    for bp in boarding_passes:
-        if bp.id > highest_id:
-            highest_id = bp.id
+    highest_id = max([bp.id for bp in boarding_passes])
     print('Part A - Highest ID:', highest_id)
 
     # Part B
@@ -72,5 +69,6 @@ if __name__ == '__main__':
         else:
             possible_ids = possible_ids[:-index]
             break
+    # Should only be one ID left
     assert len(possible_ids) == 1
     print('Part B - Final Remaining ID:', possible_ids[0])

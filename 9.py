@@ -33,7 +33,8 @@ def initialize_sum_queue(data_q: deque) -> deque:
 def calc_new_sums(data_q: deque) -> List[int]:
     """Calculate newly possible sums after new number added to data queue."""
     new_number = data_q[-1]
-    new_sums = [new_number + old_number for old_number in [data_q[i] for i in range(len(data_q))]]
+    old_numbers = [data_q[i] for i in range(len(data_q) - 1)]  # can't slice deques
+    new_sums = [new_number + old_number for old_number in old_numbers]
     return new_sums
 
 

@@ -54,7 +54,7 @@ def process_data_until_invalid(data: List[int], data_q: deque, sum_q: deque) -> 
     return None
 
 
-def find_continugous_summed_numbers(data: List[int], invalid_number: int) -> Optional[List[int]]:
+def find_contiguous_summed_numbers(data: List[int], invalid_number: int) -> Optional[List[int]]:
     """Find contiguous set of numbers in data that sums to invalid number."""
     starting_index = data.index(invalid_number)
     for index in range(starting_index, 1, -1):
@@ -86,7 +86,7 @@ if __name__ == '__main__':
         exit()
 
     # Part B
-    contiguous_summed_numbers = find_continugous_summed_numbers(data, invalid_number)
+    contiguous_summed_numbers = find_contiguous_summed_numbers(data, invalid_number)
     if contiguous_summed_numbers:
         encryption_weakness = min(contiguous_summed_numbers) + max(contiguous_summed_numbers)
         print('Part B - Encryption Weakness Found:', encryption_weakness)

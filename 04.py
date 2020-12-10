@@ -104,7 +104,7 @@ def validate_list_of_passports(passports, part_a=False):
 
 
 if __name__ == '__main__':
-    INPUT_DATA_FILEPATH = '4.txt'
+    INPUT_DATA_FILEPATH = '04.txt'
 
     passport_data = read_all_passport_data(INPUT_DATA_FILEPATH)
     valid_list_a = validate_list_of_passports(passport_data, part_a=True)

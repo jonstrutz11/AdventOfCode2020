@@ -70,7 +70,7 @@ def find_contiguous_summed_numbers(data: List[int], invalid_number: int) -> Opti
 
 
 if __name__ == '__main__':
-    DATA_FILEPATH = '9.txt'
+    DATA_FILEPATH = '09.txt'
     PREAMBLE_LENGTH = 25
 
     data = read_data(DATA_FILEPATH)

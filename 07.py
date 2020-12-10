@@ -111,7 +111,7 @@ def count_containees(bag: Bag, bag_list: List[Bag], total: int = 0) -> int:
 
 
 if __name__ == '__main__':
-    DATA_FILEPATH = '7.txt'
+    DATA_FILEPATH = '07.txt'
 
     bag_rules = parse_bag_rules(DATA_FILEPATH)
     bag_hierarchy = build_bag_hierarchy(bag_rules)

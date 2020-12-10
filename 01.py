@@ -1,6 +1,6 @@
 """Advent of Code 2020 - Problem 1"""
 
-with open('1.txt', 'r') as infile:
+with open('01.txt', 'r') as infile:
     data = [int(num) for num in infile.readlines()]
 
 print('Data:', data[:5])

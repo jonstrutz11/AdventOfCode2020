@@ -52,7 +52,7 @@ def count_trees(slope_x, slope_y, tree_array):
 
 
 if __name__ == '__main__':
-    DATA_FILEPATH = '3.txt'
+    DATA_FILEPATH = '03.txt'
     SLOPE_X_LIST = [1, 3, 5, 7, 1]
     SLOPE_Y_LIST = [1, 1, 1, 1, 2]
 

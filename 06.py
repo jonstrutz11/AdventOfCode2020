@@ -31,7 +31,7 @@ def count_everyone_answers(group_answers):
 
 
 if __name__ == '__main__':
-    DATA_FILEPATH = '6.txt'
+    DATA_FILEPATH = '06.txt'
 
     all_group_answers = parse_customs_data(DATA_FILEPATH)
 

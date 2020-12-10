@@ -59,7 +59,7 @@ class BootCode():
 
 
 if __name__ == '__main__':
-    DATA_FILEPATH = '8.txt'
+    DATA_FILEPATH = '08.txt'
 
     instruction_list = read_instructions(DATA_FILEPATH)
 

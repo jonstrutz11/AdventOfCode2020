@@ -41,7 +41,7 @@ def read_and_parse_boarding_pass_data(filepath):
 
 
 if __name__ == '__main__':
-    DATA_FILEPATH = '5.txt'
+    DATA_FILEPATH = '05.txt'
 
     boarding_passes = read_and_parse_boarding_pass_data(DATA_FILEPATH)
 

@@ -1,6 +1,6 @@
 """Advent of Code 2020 - Problem 2"""
 
-with open('2.txt', 'r') as infile:
+with open('02.txt', 'r') as infile:
     raw_data = [line for line in infile.readlines()]
 
 pw_dicts = []

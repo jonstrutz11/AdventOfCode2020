@@ -42,6 +42,7 @@ def calculate_possible_combinations(contiguous_1_counts: Dict[int, int]) -> int:
     all_contig_combos = []  # list of number of combinations contributed by each contig of 1s
     for contig_len in contiguous_1_counts:
         num_contigs_of_this_len = contiguous_1_counts[contig_len]
+        # Number of possible combos for 1-contig is the triangular number for its length plus 1
         contig_combos = [(calc_triangular_number(contig_len) + 1)] * num_contigs_of_this_len
         all_contig_combos += contig_combos
     n_combos = math.prod(all_contig_combos)
@@ -49,7 +50,7 @@ def calculate_possible_combinations(contiguous_1_counts: Dict[int, int]) -> int:
 
 
 def calc_triangular_number(n: int) -> int:
-    """Count triangular number for triangle of side length, n."""
+    """Calculate triangular number for triangle of side length, n."""
     return sum(range(n))
 
 
